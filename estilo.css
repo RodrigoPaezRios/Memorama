@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card.flipped {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+button{
+    background-color: rgb(61, 110, 208);
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
